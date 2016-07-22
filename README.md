@@ -1,6 +1,6 @@
 #NoteFire
 
-NoteFire is a collection of simple note apps. Each app is functionally identical, but written using a different  [Firebase JavaScript Library](https://firebase.google.com/docs/libraries/). The goal of this project is to show how a simple notes app can be written using the libraries that Firebase offers. Each app points to the same Firebase, so each app contains identical data.
+NoteFire is a collection of simple note apps. Each app is written using a different  [Firebase JavaScript Library](https://firebase.google.com/docs/libraries/). The goal of this project is to show how a simple notes app can be written using the libraries that Firebase offers. Each app points to the same Firebase, so each app contains identical data.
 
 So far this project contains two apps. One written using [BackboneFire](https://github.com/firebase/backbonefire) and another using [AngularFire](https://github.com/firebase/angularfire).
 

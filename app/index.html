@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NoteFire</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="common/libs/bootstrap/css/bootstrap.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- GitHub ribbon -->
+    <a href="https://github.com/bobzurad/NoteFireDev">
+      <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+    </a>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">NoteFire</h1>
+        <p>NoteFire is a collection of simple note apps. Each app is functionally identical, but written using a different <a href="https://firebase.google.com/docs/libraries/">Firebase JavaScript Library</a>. The goal of this project is to show how a simple notes app can be written using the libraries that Firebase offers. Each app points to the same Firebase, so each app contains identical data. The source code to these apps are availabe on <a href="https://github.com/bobzurad/NoteFireDev">GitHub</a>.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>BackboneFire</h2>
+          <p>View the NoteFire app, powered by BackboneFire.</p>
+          <p><a class="btn btn-secondary" href="/backbonefire" role="button">View app</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>AngularFire</h2>
+          <p>View the NoteFire app, powered by AngularFire.</p>
+          <p><a class="btn btn-secondary" href="/angularfire" role="button">View app</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>EmberFire</h2>
+          <p>View the NoteFire app, powered by EmberFire.</p>
+          <p><a class="btn btn-secondary disabled" href="#" role="button">Coming soon</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>These apps created by <a href="https://twitter.com/bobzurad">Bob Zurad</a></p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="common/libs/jquery/jquery.js"></script>
+    <!-- Bootstrap 4-alpha2 requires Tether, apparently...getting error in bootstrap.js saying so... -->
+    <script src="common/libs/tether/js/tether.js"></script>
+    <script src="common/libs/bootstrap/js/bootstrap.js"></script>
+
+    <script>
+      /*!
+       * IE10 viewport hack for Surface/desktop Windows 8 bug
+       * Copyright 2014-2015 Twitter, Inc.
+       * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+       */
+      // See the Getting Started docs for more information:
+      // http://getbootstrap.com/getting-started/#support-ie10-width
+      (function () {
+        'use strict';
+
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+          var msViewportStyle = document.createElement('style');
+          msViewportStyle.appendChild(
+            document.createTextNode(
+              '@-ms-viewport{width:auto!important}'
+            )
+          );
+          document.head.appendChild(msViewportStyle);
+        }
+      })();
+    </script>
+  </body>
+</html>

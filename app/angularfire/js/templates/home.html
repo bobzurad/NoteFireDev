@@ -1,0 +1,11 @@
+<div ng-repeat="note in homeCtrl.notes | orderBy:'-dateCreated'">
+  <div id="{{ note.$id }}" class="card col-md-4" ng-click="homeCtrl.onCardClick(note.$id)">
+    <div class="noteCard">
+      <h4>{{ note.title }}</h4>
+      <p class="card-text">
+        {{ note.content.substr(0, 300) }}
+        {{ (note.content.length > 300) ? '...' : '' }}
+      </p>
+    </div>
+  </div>
+</div>

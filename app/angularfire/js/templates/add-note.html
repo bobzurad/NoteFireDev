@@ -1,0 +1,18 @@
+<form name="addNoteForm" ng-submit="addNoteForm.$valid && addNoteCtrl.addNote()" novalidate>
+
+  <fieldset class="form-group">
+    <span class="form-control-label"></span>
+    <input id="title" type="text" ng-model="addNoteCtrl.note.title" class="form-control"
+            placeholder="Title" maxlength="200" required>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <span class="form-control-label"></span>
+    <textarea ng-model="addNoteCtrl.note.content" class="form-control" rows="20" required></textarea>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <input type="submit" class="btn btn-primary" value="Save Note" />
+  </fieldset>
+
+</form>

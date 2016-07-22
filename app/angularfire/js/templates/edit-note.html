@@ -1,0 +1,28 @@
+<form name="editNoteForm" ng-submit="editNoteForm.$valid && editNoteCtrl.saveNote()" novalidate>
+
+  <fieldset class="form-group">
+    <span class="form-control-label"></span>
+    <input type="text" ng-model="editNoteCtrl.note.title" class="form-control"
+            placeholder="Title" maxlength="200" required>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <span class="form-control-label"></span>
+    <textarea ng-model="editNoteCtrl.note.content" id="content" class="form-control" rows="20" required></textarea>
+  </fieldset>
+
+  <fieldset ng-show="!editNoteCtrl.showWarning" class="form-group buttonGroup">
+    <input type="submit" class="btn btn-primary" value="Save Note" />
+    <input type="button" ng-click="editNoteCtrl.showDeleteWarning()"
+      class="btn btn-danger pull-xs-right" role="button" value="Delete Note" />
+  </fieldset>
+
+  <fieldset ng-show="editNoteCtrl.showWarning" class="form-group pull-xs-right deleteWarning">
+    Are you sure you want to delete this note?
+    <input type="button" ng-click="editNoteCtrl.hideDeleteWarning()"
+      class="btn btn-secondary" role="button" value="No" />
+    <input type="button" ng-click="editNoteCtrl.deleteNote()"
+      class="btn btn-danger" role="button" value="Yes" />
+  </fieldset>
+
+</form>

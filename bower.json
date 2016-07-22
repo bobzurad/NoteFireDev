@@ -1,0 +1,24 @@
+{
+  "name": "NoteFire",
+  "description": "A simple notes app, written using various libraries from Firebase.",
+  "main": "app/index.html",
+  "authors": [
+    "Bob Zurad"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/bobzurad/NoteFireDev",
+  "moduleType": [
+    "amd"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbonefire": "~0.5.1"
+  }
+}

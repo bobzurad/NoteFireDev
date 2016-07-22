@@ -1,0 +1,33 @@
+{
+  "name": "NoteFireDev",
+  "author": {
+    "name": "Bob Zurad",
+    "url": "https://twitter.com/bobzurad"
+  },
+  "description": "A simple notes app, written using various libraries from Firebase.",
+  "version": "0.1.1",
+  "homepage": "https://notefiredev.firebaseapp.com/",
+  "repository": "https://github.com/bobzurad/NoteFireDev",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "angularfire": "^2.0.0",
+    "backbone": "^1.2.3",
+    "bootstrap": "4.0.0-alpha.2",
+    "firebase": "^3.0.0",
+    "http-server": "^0.8.5",
+    "jquery": "^2.2.0",
+    "requirejs": "^2.1.22",
+    "requirejs-text": "^2.0.12",
+    "tether": "^1.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm install",
+    "start": "http-server ./app -a localhost -p 8001",
+    "pretest": "npm install"
+  },
+  "dependencies": {}
+}

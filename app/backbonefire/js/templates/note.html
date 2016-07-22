@@ -1,0 +1,9 @@
+<div id="<%= model.id %>" class="card col-md-4">
+  <div class="noteCard">
+    <h4><%= model.title %></h4>
+    <p class="card-text">
+      <%= model.content.substr(0, 300) %>
+      <% if (model.content.length > 300) { print('...'); } %>
+    </p>
+  </div>
+</div>
